@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Apple Emoji</string>
+	<string name="apply_dialog_content">&#160;Your emoji style has been Changed.Please exit your apps and reboot your device to take effect.Thankyou.</string>
+	<string name="apply_dialog_reboot">Reboot</string>
+	<string name="apply_dialog_delay">Later</string>
+	<string name="apply_dialog_title">Device Reboot</string>
+	<string name="fail_dialog_content">&#160;I can\'t obtain the permission on your device, please fixed it first.Thank you.</string>
+	<string name="fail_dialog_sure">OK</string>
+	<string name="fail_dialog_title">NO PERMISSION</string>
+	<string name="button_apple">Switch emoji to Apple style</string>
+	<string name="button_android">Restore to Android style</string>
+	<string name="label_Warming">Warming</string>
+	<string name="label_text">&#160;&#160;Make sure your device has rooted before using it,Thank you.</string>
+	<string name="copyright">Copyright © 2014 EnphoneH </string>
+	<string name="toast_apple">Your device is apple style emoji already</string>
+    <string name="toast_android">Your device is android style emoji already</string>
+     <string name="toast_no_root">Your device have not  been root yet,please root it first.Thank you.</string>
+</resources>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="@drawable/main_background">
+    <TextView android:id="@+id/label_warming"
+        android:text="@string/label_Warming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+       android:textStyle="bold"/>
+    <TextView android:id="@+id/label_text"
+        android:text="@string/label_text"
+        android:textSize="20sp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_warming"/>
+    <Button
+        android:id="@+id/btn_switchtoapple"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_button"
+        android:text="@string/button_apple" />
+    
+ 	<View 
+ 	    android:id="@+id/space"
+ 	    android:layout_height="20dp"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_centerHorizontal="true"
+ 	    android:layout_below="@id/btn_switchtoapple"/>
+ 	
+    <Button
+        android:id="@+id/btn_switchtoandroid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_button"
+        android:text="@string/button_android" />
+    
+    <LinearLayout android:id="@+id/admobe"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+         android:layout_alignParentBottom="true"></LinearLayout>
+	
+	<TextView 
+	    android:id="@+id/copyright"
+	    android:text="@string/copyright"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#A1A1A1"
+	    android:textSize="12sp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_above="@id/admobe"/>
+</RelativeLayout>

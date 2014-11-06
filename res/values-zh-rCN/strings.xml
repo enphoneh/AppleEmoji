@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Apple Emoji</string>
+	<string name="apply_dialog_content">&#160;&#160;您的emoji样式已经改变，请重启手机生效，请退出应用并重启手机，谢谢</string>
+	<string name="apply_dialog_reboot">重启</string>
+	<string name="apply_dialog_delay">稍后</string>
+	<string name="apply_dialog_title">手机重启</string>
+	<string name="fail_dialog_content">&#160;无法获得您的手机权限，请检查权限是否被禁止，谢谢</string>
+	<string name="fail_dialog_sure">确定</string>
+	<string name="fail_dialog_title">无法授权</string>
+	<string name="button_apple">将Emoji切换为iphone样式</string>
+	<string name="button_android">还原emoji表情样式</string>
+	<string name="label_Warming">注意</string>
+	<string name="label_text">&#160;&#160;&#160;&#160;在使用该软件之前，请确认您的设备已经root，本软件只对root的设备有效，如果你的手机已经root，请到授权管理中心给予权限，谢谢。</string>
+    <string name="copyright">Copyright © 2014 EnphoneH </string>
+    <string name="toast_apple">您的设备已经是iphone样式的emoji表情了</string>
+    <string name="toast_android">您的设备已经是系统原生的emoji表情了</string>
+    <string name="toast_no_root">您的设备还没有root权限，请先获得root权限，谢谢</string>
+</resources>

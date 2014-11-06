@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/apply_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/apply_dialog_title"
+        android:textSize="30sp"
+        android:textColor="#F8F8FF"
+        android:layout_marginBottom="15dp"
+        android:visibility="visible" />
+    
+    <TextView 
+        android:id="@+id/apply_dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F8F8FF"
+        android:textSize="18sp"
+        android:text="@string/apply_dialog_content"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        
+        <Button android:id="@+id/apply_dialog_reboot"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/apply_dialog_reboot"
+            android:textColor="#EEC900"
+            android:textSize="22sp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            android:background="@drawable/dialog_button"/>
+        
+        <Button android:id="@+id/apply_dialog_delay"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/apply_dialog_delay"
+            android:textColor="#EEC900"
+            android:textSize="22sp"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:background="@drawable/dialog_button"/>
+        
+    </LinearLayout>
+
+</LinearLayout>
