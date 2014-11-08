@@ -33,8 +33,8 @@ public class ButtonClick implements OnClickListener {
 	}
 	@Override
 	public void onClick(View v) {
-		switch(v.getId()){
-		case com.enphoneh.appleemoji.R.id.btn_switchtoapple:
+		int id = v.getId();
+		if (id == R.id.btn_switchtoapple) {
 			if(mRootHelper.haveRoot())
 			{
 				if(mFileHelper.isFileExist(FILEPATH,BACKUP_NAME)){
@@ -75,8 +75,7 @@ public class ButtonClick implements OnClickListener {
 			else{
 				Toast.makeText(mContext, R.string.toast_no_root, Toast.LENGTH_LONG).show();		
 			}
-    		break;
-		case com.enphoneh.appleemoji.R.id.btn_switchtoandroid:
+		} else if (id == R.id.btn_switchtoandroid) {
 			if(mFileHelper.isFileExist(FILEPATH, BACKUP_NAME)){
 				String cmdSecond = "mv /system/fonts/NotoColorEmoji.ttf /system/fonts/dzp";
 				String cmdThird = "mv /system/fonts/NotoColorEmoji_backup.ttf /system/fonts/NotoColorEmoji.ttf";
@@ -97,8 +96,7 @@ public class ButtonClick implements OnClickListener {
 			}
 			else{
 				Toast.makeText(mContext, R.string.toast_android, Toast.LENGTH_LONG).show();
-			}	
-			break;
+			}
 		}		
 	}
 

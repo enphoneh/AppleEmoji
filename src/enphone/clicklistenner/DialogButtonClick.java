@@ -20,18 +20,15 @@ public class DialogButtonClick implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		switch(v.getId()){	
-		case R.id.apply_dialog_reboot:
+		int id = v.getId();
+		if (id == R.id.apply_dialog_reboot) {
 			mRebootHelper = new RebootHelper(mContext);
 			mRebootHelper.rebootSystem();
 			mDialog.dismiss();
-			break;
-		case R.id.apply_dialog_delay:
+		} else if (id == R.id.apply_dialog_delay) {
 			mDialog.dismiss();
-			break;	
-		case R.id.fail_dialog_sure:
+		} else if (id == R.id.fail_dialog_sure) {
 			mDialog.dismiss();
-			break;
 		}
 	}
 
